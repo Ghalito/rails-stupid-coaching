@@ -1,4 +1,5 @@
 class QuestionsController < ApplicationController
+
   def ask
   end
 
@@ -7,12 +8,11 @@ class QuestionsController < ApplicationController
     @answer = ''
 
     if @question == 'Hello?'
-       @answer = 'Ho'
+      @answer = 'Ho'
     elsif @question.end_with?('?')
-      @answer = 'tftfyt'
+      @answer = 'bibibibi'
     else
       @answer = 'bla bla bla'
     end
-
   end
 end
